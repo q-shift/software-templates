@@ -79,8 +79,8 @@ spec:
         java_package_name:
           title: Java Package Namespace
           type: string
-          default: io/janus/quarkusapp
-          description: Name for the Java Package (ensure to use the / character as this is used for folder structure) should match Group ID and Artifact ID
+          default: io.janus.quarkusapp
+          description: Name for the Java Package (e.g. io.janus.quarkusapp) should match Group ID and Artifact ID
     - title: Provide information about the CI method
       required:
         - ci
