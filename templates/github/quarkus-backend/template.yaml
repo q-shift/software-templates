@@ -59,7 +59,7 @@ spec:
         - groupId
         - artifactId
         - version
-        - java_package-name
+        - java_package_name
       properties:
         groupId:
           title: Group ID
