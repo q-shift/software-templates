@@ -70,6 +70,11 @@ spec:
           type: string
           default: quarkusapp
           description: Maven Artifact ID
+        version: 
+          title: Version
+          type: string
+          default: 1.0.0-SNAPSHOT
+          description: Maven Artifact Version
         javaPackageName:
           title: Java Package Namespace
           type: string
