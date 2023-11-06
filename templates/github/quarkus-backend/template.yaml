@@ -58,7 +58,8 @@ spec:
       required:
         - groupId
         - artifactId
-        - javaPackageName
+        - version
+        - java_package-name
       properties:
         groupId:
           title: Group ID
@@ -75,7 +76,7 @@ spec:
           type: string
           default: 1.0.0-SNAPSHOT
           description: Maven Artifact Version
-        javaPackageName:
+        java_package_name:
           title: Java Package Namespace
           type: string
           default: io/janus/quarkusapp
@@ -148,7 +149,8 @@ spec:
           ci: ${{ parameters.ci }}
           groupId: ${{ parameters.groupId }}
           artifactId: ${{ parameters.artifactId }}
-          javaPackageName: ${{ parameters.javaPackageName }}
+          version: ${{ parameters.version }}
+          java_package_name: ${{ parameters.java_package_name }}
           sourceControl: github.com
 
     - id: ciTemplate
