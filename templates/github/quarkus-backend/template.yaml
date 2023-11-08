@@ -201,6 +201,13 @@ spec:
           java_package_name: ${{ parameters.java_package_name }}
           sourceControl: github.com
 
+    - id: addDummyFile
+      name: Add a dummy file to the project
+      action: acme:file:create
+      input:
+        contents: "This is a dummy file!"
+        filename: dummy.txt
+
     - id: publish
       name: Publishing to the Source Code Repository
       action: publish:github
