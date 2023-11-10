@@ -28,7 +28,6 @@ spec:
         repoName:
           title: Repository Name
           type: string
-          type: string
         description:
           title: Description
           type: string
