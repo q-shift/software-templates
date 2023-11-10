@@ -105,12 +105,15 @@ spec:
             - Maven
             - Gradle
             - Gradle Kotlin DSL
+        altExtensions:
+          title: Alternative Extensions
+          type: string
+          description: The list of alternative extensions
+          ui:field: QuarkusExtensionList
         extensions:
           title: Extensions
-          type: array
+          type: string
           description: The list of extensions
-          uniqueItems: true
-          ui:widget: checkboxes
           items:
             type: string
             enum:
