@@ -119,6 +119,7 @@ spec:
               - 'RestEasy'
               - 'RestEasy Reactive'
               - 'RestEasy Reactive Jackson'
+          ui:widget: checkboxes
     - title: Provide information about the CI method
       required:
         - ci
