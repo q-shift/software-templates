@@ -85,10 +85,10 @@ spec:
           title: Java Version
           type: string
           description: Java version
-          default: 11
+          default: '11'
           enum:
-            - 11
-            - 17
+            - '11'
+            - '17'
           enumNames:
             - Java 11
             - Java 17
@@ -115,38 +115,6 @@ spec:
               - quarkus-resteasy
               - quarkus-resteasy-reactive
               - quarkus-resteasy-reactive-jackson
-              - quarkus-resteasy-reactive-mutiny
-              - quarkus-resteasy-reactive-multipart
-              - quarkus-grpc
-              - quarkus-rest-client
-              - quarkus-smallrye-openapi
-              - quarkus-smallrye-graphql
-              - quarkus-smallrye-metrics
-              - quarkus-smallrye-stork
-              - quarkus-hibernate-orm
-              - quarkus-hibernate-orm-panache
-              - quarkus-hibernate-reactive
-              - quarkus-hibernate-reactive-panache
-              - quarkus-jdbc-postgresql
-              - quarkus-jdbc-mysql
-              - quarkus-jdbc-mariadb
-              - quarkus-jdbc-mssql
-              - quarkus-jdbc-db2
-              - quarkus-jdbc-oracle
-              - quarkus-flyway
-              - quarkus-liquibase
-              - quarkus-liquibase-mongodb
-              - quarkus-mongodb-client
-              - quarkus-mongodb-panache
-              - quarkus-mongodb-rest-data-panache
-              - quarkus-kafka-client
-              - quarkus-kafka-stream
-              - quarkus-smallrye-reactive-messaging-kafka
-              - quarkus-kubernetes
-              - quarkus-openshift
-              - quarkus-container-image-docker
-              - quarkus-container-image-jib
-              - quarkus-container-image-buildpacks
             :enumNames:
               - 'RestEasy'
               - 'RestEasy Reactive'
