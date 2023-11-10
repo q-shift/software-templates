@@ -1,9 +1,9 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: quarkus-quickstart-template
-  title: Create a Quarkus Quickstart
-  description: Create a Quarkus Quickstart from Github
+  name: quarkus-code-quarkus-io-template
+  title: Create a Quarkus Application form code.quarkus.io
+  description: Create a Quarkus App from code.quarkus.io
   tags:
     - quarkus
     - java
@@ -18,7 +18,6 @@ spec:
       required:
         - orgName
         - repoName
-        - quickstartName
         - owner
         - system
         - port
@@ -29,8 +28,6 @@ spec:
         repoName:
           title: Repository Name
           type: string
-        quickstartName:
-          title: Quickstart Name
           type: string
         description:
           title: Description
@@ -135,10 +132,12 @@ spec:
   steps:
     - id: template
       name: Generating the Source Code Component
-      action: quarkus:quickstart:clone
+      action: quarkus:app:create
       input:
-        quickstartName: $${{ parameters.quickstartName }}
-
+        values:
+          groupId: ${{ parameters.groupId }}
+          artifactId: ${{ parameters.artifactId }}
+          version: ${{ parameters.version }}
     - id: ciTemplate
       name: Generating the CI Component
       action: fetch:template

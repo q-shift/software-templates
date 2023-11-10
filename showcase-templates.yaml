@@ -12,7 +12,7 @@ spec:
     - https://github.com/iocanel/software-templates/blob/main/templates/azure/dotnet-frontend/template.yaml
     - https://github.com/iocanel/software-templates/blob/main/templates/github/spring-boot-backend/template.yaml
     - https://github.com/iocanel/software-templates/blob/main/templates/github/quarkus-backend/template.yaml
-    - https://github.com/iocanel/software-templates/blob/main/templates/github/quarkus-quickstart/template.yaml
+    - https://github.com/iocanel/software-templates/blob/main/templates/github/quarkus-code-quarkus-io/template.yaml
     - https://github.com/iocanel/software-templates/blob/main/templates/github/argocd/template.yaml
     - https://github.com/iocanel/software-templates/blob/main/templates/github/launch-ansible-job/template.yaml
     - https://github.com/iocanel/software-templates/blob/main/templates/github/define-ansible-job/template.yaml
