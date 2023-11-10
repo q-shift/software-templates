@@ -109,17 +109,20 @@ spec:
           title: Extensions
           type: array
           description: The list of extensions
+          uniqueItems: true
+          ui:widget: checkboxes
           items:
             type: string
             enum:
               - quarkus-resteasy
               - quarkus-resteasy-reactive
               - quarkus-resteasy-reactive-jackson
+              - quarkus-openshift
             :enumNames:
-              - 'RestEasy'
-              - 'RestEasy Reactive'
-              - 'RestEasy Reactive Jackson'
-          ui:widget: checkboxes
+              - RestEasy
+              - RestEasy Reactive
+              - RestEasy Reactive Jackson
+              - Quarkus Openshift
     - title: Provide information about the CI method
       required:
         - ci
