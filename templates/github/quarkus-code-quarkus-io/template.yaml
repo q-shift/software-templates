@@ -105,7 +105,7 @@ spec:
             - Maven
             - Gradle
             - Gradle Kotlin DSL
-        altExtensions:
+        extensions:
           title: Alternative Extensions
           type: array
           description: The list of alternative extensions
