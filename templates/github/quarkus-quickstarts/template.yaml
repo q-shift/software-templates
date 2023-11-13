@@ -144,6 +144,7 @@ spec:
           groupId: ${{ parameters.groupId }}
           artifactId: ${{ parameters.artifactId }}
           version: ${{ parameters.version }}
+          quickstartName: ${{ parameters.quickstartName }}
     - id: ciTemplate
       name: Generating the CI Component
       action: fetch:template
