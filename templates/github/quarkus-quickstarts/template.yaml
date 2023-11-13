@@ -138,7 +138,7 @@ spec:
   steps:
     - id: template
       name: Generating the Source Code Component
-      action: quarkus:app:create
+      action: quarkus:quickstart:clone
       input:
         values:
           groupId: ${{ parameters.groupId }}
