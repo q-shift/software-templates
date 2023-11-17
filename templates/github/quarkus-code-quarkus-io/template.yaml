@@ -110,6 +110,13 @@ spec:
           type: array
           description: The list of alternative extensions
           ui:field: QuarkusExtensionList
+        additionalProperties: 
+          title: Additional Properties
+          type: string
+          description: Additional Properties (to be appended to src/main/application.properties)
+          ui:widget: textarea
+          ui:options:
+            rows: 5
     - title: Provide information about the CI method
       required:
         - ci
@@ -169,6 +176,7 @@ spec:
           buildTool: ${{ parameters.buildTool }}
           javaVersion: ${{ parameters.javaVersion }}
           extensions: ${{ parameters.extensions }}
+          additionalProperties: ${{ parameters.additionalProperties }}
     - id: ciTemplate
       name: Generating the CI Component
       action: fetch:template
