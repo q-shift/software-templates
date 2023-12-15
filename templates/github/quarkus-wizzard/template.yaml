@@ -114,17 +114,26 @@ spec:
         database:
           title: Enable database
           type: string
+          default: none
           items:
             type: string
             enum:
-              - '<none>'
-              - 'db2'
-              - 'mariadb'
-              - 'mssql'
-              - 'mysql'
-              - 'oracle'
-              - 'postgresql'
-          uniqueItems: true
+              - none
+              - quarkus-jdbc-db2
+              - quarkus-jdbc-mariadb
+              - quarkus-jdbc-mssql
+              - quarkus-jdbc-mysql
+              - quarkus-jdbc-oracle
+              - quarkus-jdbc-postgresql
+            enumNames:
+              - 'None'
+              - 'DB2'
+              - 'Maria DB'
+              - 'MS SQL'
+              - 'MySQL'
+              - 'Oracle'
+              - 'PostgreSQL'
+          unique'Items: true'
         healthEndpoint:
           title: Enable health endpoints
           type: boolean
