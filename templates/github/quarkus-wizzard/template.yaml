@@ -113,7 +113,6 @@ spec:
       properties:
         database:
           title: Enable database
-          type: boolean
           default: true
           ui:widget: radio
           type: array
