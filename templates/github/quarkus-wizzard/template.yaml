@@ -113,18 +113,18 @@ spec:
       properties:
         database:
           title: Enable database
-          type: array
+          type: string
           items:
-            type: boolean
+            type: string
             enum:
-              - 'jdbc-db2'
-              - 'jdbc-mariadb'
-              - 'jdbc-mssql'
-              - 'jdbc-mysql'
-              - 'jdbc-oracle'
-              - 'jdbc-postgresql'
+              - '<none>'
+              - 'db2'
+              - 'mariadb'
+              - 'mssql'
+              - 'mysql'
+              - 'oracle'
+              - 'postgresql'
           uniqueItems: true
-          ui:widget: checkboxes
         healthEndpoint:
           title: Enable health endpoints
           type: boolean
