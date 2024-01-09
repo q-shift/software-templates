@@ -16,6 +16,7 @@ spec:
     - https://github.com/iocanel/software-templates/blob/main/templates/github/quarkus-quickstarts/template.yaml
     - https://github.com/iocanel/software-templates/blob/main/templates/github/quarkus-wizzard/template.yaml
     - https://github.com/iocanel/software-templates/blob/main/templates/github/quarkus-integration/template.yaml
+    - https://github.com/iocanel/software-templates/blob/main/templates/github/quarkus-chatbot/template.yaml
     - https://github.com/iocanel/software-templates/blob/main/templates/github/argocd/template.yaml
     - https://github.com/iocanel/software-templates/blob/main/templates/github/launch-ansible-job/template.yaml
     - https://github.com/iocanel/software-templates/blob/main/templates/github/define-ansible-job/template.yaml
