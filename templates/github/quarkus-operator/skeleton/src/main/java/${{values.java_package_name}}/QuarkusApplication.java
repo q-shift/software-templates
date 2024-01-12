@@ -8,12 +8,12 @@ import io.fabric8.kubernetes.model.annotation.Version;
 
 @Group("${{values.apiGroup}}")
 @Version("${{values.apiVersion}}")
-@ShortNames("${{values.shortName}}")
+@ShortNames("qapps")
 public class QuarkusApplication extends CustomResource<QuarkusApplicationSpec, QuarkusApplicationStatus> implements Namespaced {
 
   public static final String GROUP = "${{values.apiGroup}}";
   public static final String VERSION = "${{values.apiVersion}}";
-  public static final String KIND = "${{values.kind}}";
-  public static final String PLURAL = "${{values.plural}}";
+  public static final String KIND = "QuarkusApplication";
+  public static final String PLURAL = "quarkusapplications";
   public static final String NAME = PLURAL + "." + GROUP;
 }

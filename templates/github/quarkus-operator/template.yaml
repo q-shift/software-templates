@@ -101,21 +101,11 @@ spec:
           type: string
           default: v1alpha1
           description: The API Version of the CRD
-        kind:
-          title: Kind
+        namespace:
+          title: Example namespace
           type: string
-          default: QuarkusApplication
-          description: The Kind of the CRD
-        plural:
-          title: Plural
-          type: string
-          default: quarkusapplications
-          description: The plural name of the CRD
-        shortName:
-          title: Plural
-          type: string
-          default: quarkusapplications
-          description: The plural name of the CRD
+          default: default
+          description: The namespace of the example QuarkusApplication
     - title: Provide information about the CI method
       required:
         - ci
