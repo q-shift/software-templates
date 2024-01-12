@@ -176,7 +176,6 @@ spec:
           java_package_name: ${{ parameters.java_package_name }}
           apiGroup: ${{ parameters.apiGroup }}
           apiVersion: ${{ parameters.apiVersion }}
-          namespace: ${{ parameters.namespace }}
           sourceControl: github.com
 
     - id: ciTemplate
@@ -204,7 +203,6 @@ spec:
           java_package_name: ${{ parameters.java_package_name }}
           apiGroup: ${{ parameters.apiGroup }}
           apiVersion: ${{ parameters.apiVersion }}
-          namespace: ${{ parameters.namespace }}
           sourceControl: github.com
 
     - id: catalogTemplate
@@ -230,7 +228,6 @@ spec:
           java_package_name: ${{ parameters.java_package_name }}
           apiGroup: ${{ parameters.apiGroup }}
           apiVersion: ${{ parameters.apiVersion }}
-          namespace: ${{ parameters.namespace }}
           sourceControl: github.com
 
     - id: publish
