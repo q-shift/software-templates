@@ -87,9 +87,7 @@ spec:
       required:
         - apiGroup
         - apiVersion
-        - kind
-        - plural
-        - shortName
+        - namespace
       properties:
         apiGroup:
           title: Api Group
