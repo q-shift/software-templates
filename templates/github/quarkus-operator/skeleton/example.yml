@@ -1,5 +1,5 @@
 apiVersion: ${{values.apiGroup}}/${{values.apiVersion}}
-kind: ${{values.kind}}
+kind: QuarkusApplication
 metadata:
   name: example
   namespace: ${{values.namespace}}
