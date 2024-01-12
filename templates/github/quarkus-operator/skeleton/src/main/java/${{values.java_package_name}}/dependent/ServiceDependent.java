@@ -1,4 +1,4 @@
-package ${{values.java_package_name}}.dependant;
+package ${{values.java_package_name}}.dependent;
 
 import ${{values.java_package_name}}.QuarkusApplication;
 import org.jboss.logging.Logger;

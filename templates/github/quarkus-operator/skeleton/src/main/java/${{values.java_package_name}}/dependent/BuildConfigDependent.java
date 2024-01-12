@@ -1,4 +1,4 @@
-package ${{values.java_package_name}}.dependant;
+package ${{values.java_package_name}}.dependent;
 
 import static ${{values.java_package_name}}.Util.version;
 import static ${{values.java_package_name}}.dependent.BuilderImageStreamDependent.BUILDER_IMAGE_NAME;
