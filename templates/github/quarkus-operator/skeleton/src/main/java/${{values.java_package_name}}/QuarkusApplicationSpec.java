@@ -1,15 +1,19 @@
-package ${{ values.java_package_name }};
+package ${{values.java_package_name}};
+
+import java.util.Map;
 
 public class QuarkusApplicationSpec {
   private String coordinates;
   private String repositoryUrl;
+  private Map<String, String> env;
 
   public QuarkusApplicationSpec() {
   }
 
-  public QuarkusApplicationSpec(String coordinates, String repositoryUrl) {
+  public QuarkusApplicationSpec(String coordinates, String repositoryUrl, Map<String, String> env) {
     this.coordinates = coordinates;
     this.repositoryUrl = repositoryUrl;
+    this.env = env;
   }
 
   public String getCoordinates() {
@@ -26,6 +30,14 @@ public class QuarkusApplicationSpec {
 
   public void setRepositoryUrl(String repositoryUrl) {
     this.repositoryUrl = repositoryUrl;
+  }
+
+  public Map<String, String> getEnv() {
+    return env;
+  }
+
+  public void setEnv(Map<String, String> env) {
+    this.env = env;
   }
 
 }

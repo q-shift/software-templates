@@ -1,4 +1,4 @@
-package ${{ values.java_package_name }};
+package ${{values.java_package_name}};
 
 public class QuarkusApplicationStatus {
 

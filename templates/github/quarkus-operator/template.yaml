@@ -71,7 +71,7 @@ spec:
         artifactId:
           title: Artifact ID
           type: string
-          default: quarkusapp
+          default: quarkus-app
           description: Maven Artifact ID
         version: 
           title: Version
@@ -81,8 +81,41 @@ spec:
         java_package_name:
           title: Java Package Namespace
           type: string
-          default: io.janus.quarkusapp
+          default: io.janus.quarkus
           description: Name for the Java Package (e.g. io.janus.quarkusapp) should match Group ID and Artifact ID
+    - title: Provide information about the Operator CRD metadata
+      required:
+        - apiGroup
+        - apiVersion
+        - kind
+        - plural
+        - shortName
+      properties:
+        apiGroup:
+          title: Api Group
+          type: string
+          default: janus.io
+          description: The API Group of the CRD
+        apiVersion:
+          title: Api Version
+          type: string
+          default: v1alpha1
+          description: The API Version of the CRD
+        kind:
+          title: Kind
+          type: string
+          default: QuarkusApplication
+          description: The Kind of the CRD
+        plural:
+          title: Plural
+          type: string
+          default: quarkusapplications
+          description: The plural name of the CRD
+        shortName:
+          title: Plural
+          type: string
+          default: quarkusapplications
+          description: The plural name of the CRD
     - title: Provide information about the CI method
       required:
         - ci
