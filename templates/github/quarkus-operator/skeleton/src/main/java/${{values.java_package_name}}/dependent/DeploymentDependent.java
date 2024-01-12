@@ -1,13 +1,13 @@
 package ${{values.java_package_name}}.dependant;
 
-import static org.acme.Util.version;
+import static ${{values.java_package_name}}.Util.version;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import org.acme.QuarkusApplication;
+import ${{values.java_package_name}}.QuarkusApplication;
 import org.jboss.logging.Logger;
 
 import io.fabric8.kubernetes.api.model.EnvVar;

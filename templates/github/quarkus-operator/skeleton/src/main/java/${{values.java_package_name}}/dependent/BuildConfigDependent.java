@@ -1,10 +1,10 @@
 package ${{values.java_package_name}}.dependant;
 
-import static org.acme.Util.version;
-import static org.acme.dependent.BuilderImageStreamDependent.BUILDER_IMAGE_NAME;
-import static org.acme.dependent.BuilderImageStreamDependent.BUILDER_IMAGE_TAG;
+import static ${{values.java_package_name}}.Util.version;
+import static ${{values.java_package_name}}.dependent.BuilderImageStreamDependent.BUILDER_IMAGE_NAME;
+import static ${{values.java_package_name}}.dependent.BuilderImageStreamDependent.BUILDER_IMAGE_TAG;
 
-import org.acme.QuarkusApplication;
+import ${{values.java_package_name}}.QuarkusApplication;
 import org.jboss.logging.Logger;
 
 import io.fabric8.openshift.api.model.BuildConfig;

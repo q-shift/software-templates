@@ -1,7 +1,7 @@
 package ${{values.java_package_name}};
 
 import static io.javaoperatorsdk.operator.api.reconciler.Constants.WATCH_CURRENT_NAMESPACE;
-import static org.acme.Util.download;
+import static ${{values.java_package_name}}.Util.download;
 
 import java.io.File;
 import java.nio.file.Files;
@@ -10,13 +10,13 @@ import java.nio.file.StandardCopyOption;
 import java.util.Map;
 import java.util.Optional;
 
-import org.acme.condition.BuilderImageStreamReadyCondition;
-import org.acme.condition.OutputImageStreamReadyCondition;
-import org.acme.dependent.BuildConfigDependent;
-import org.acme.dependent.BuilderImageStreamDependent;
-import org.acme.dependent.DeploymentDependent;
-import org.acme.dependent.OutputImageStreamDependent;
-import org.acme.dependent.ServiceDependent;
+import ${{values.java_package_name}}.condition.BuilderImageStreamReadyCondition;
+import ${{values.java_package_name}}.condition.OutputImageStreamReadyCondition;
+import ${{values.java_package_name}}.dependent.BuildConfigDependent;
+import ${{values.java_package_name}}.dependent.BuilderImageStreamDependent;
+import ${{values.java_package_name}}.dependent.DeploymentDependent;
+import ${{values.java_package_name}}.dependent.OutputImageStreamDependent;
+import ${{values.java_package_name}}.dependent.ServiceDependent;
 import org.jboss.logging.Logger;
 
 import io.dekorate.utils.Packaging;

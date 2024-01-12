@@ -1,6 +1,6 @@
 package ${{values.java_package_name}}.dependant;
 
-import org.acme.QuarkusApplication;
+import ${{values.java_package_name}}.QuarkusApplication;
 
 import io.fabric8.openshift.api.model.ImageStream;
 import io.javaoperatorsdk.operator.api.reconciler.ResourceIDMatcherDiscriminator;

@@ -1,6 +1,6 @@
 package ${{values.java_package_name}}.dependant;
 
-import org.acme.QuarkusApplication;
+import ${{values.java_package_name}}.QuarkusApplication;
 import org.jboss.logging.Logger;
 
 import io.fabric8.openshift.api.model.ImageStream;

@@ -2,7 +2,7 @@ package ${{values.java_package_name}}.dependant;
 
 import java.util.Map;
 
-import org.acme.QuarkusApplication;
+import ${{values.java_package_name}}.QuarkusApplication;
 
 import io.fabric8.kubernetes.api.model.HasMetadata;
 import io.fabric8.kubernetes.api.model.ObjectMeta;

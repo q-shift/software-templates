@@ -1,8 +1,8 @@
 package ${{values.java_package_name}}.condition;
 
-import static org.acme.Util.version;
+import static ${{values.java_package_name}}.Util.version;
 
-import org.acme.QuarkusApplication;
+import ${{values.java_package_name}}.QuarkusApplication;
 import org.jboss.logging.Logger;
 
 import io.fabric8.openshift.api.model.ImageStream;
