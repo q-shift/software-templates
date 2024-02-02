@@ -139,8 +139,13 @@ spec:
           type: boolean
           default: true
           ui:widget: radio
+        codeQuarkusUrl:
+          title: Code Quarkus URL
+          type: string
+          description: URL for Code Quarkus
+          default: https://code.quarkus.io
         extensions:
-          title: Alternative Extensions
+          title: Additional Extensions
           type: array
           description: The list of alternative extensions
           ui:field: QuarkusExtensionList
@@ -222,6 +227,7 @@ spec:
           buildTool: ${{ parameters.buildTool }}
           javaVersion: ${{ parameters.javaVersion }}
           extensions: ${{ parameters.extensions }}
+          codeQuarkusUrl: ${{ parameters.codeQuarkusUrl }}
           database: ${{ parameters.database }}
           infoEndpoint: ${{ parameters.infoEndpoint }}
           healthEndpoint: ${{ parameters.healthEndpoint }}
