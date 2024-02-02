@@ -14,7 +14,7 @@ spec:
     - https://github.com/q-shift/software-templates/blob/main/templates/github/quarkus-backend/template.yaml
     - https://github.com/q-shift/software-templates/blob/main/templates/github/quarkus-code-quarkus-io/template.yaml
     - https://github.com/q-shift/software-templates/blob/main/templates/github/quarkus-quickstarts/template.yaml
-    - https://github.com/q-shift/software-templates/blob/main/templates/github/quarkus-wizzard/template.yaml
+    - https://github.com/q-shift/software-templates/blob/main/templates/github/quarkus-application/template.yaml
     - https://github.com/q-shift/software-templates/blob/main/templates/github/quarkus-integration/template.yaml
     - https://github.com/q-shift/software-templates/blob/main/templates/github/quarkus-chatbot/template.yaml
     - https://github.com/q-shift/software-templates/blob/main/templates/github/quarkus-operator/template.yaml
